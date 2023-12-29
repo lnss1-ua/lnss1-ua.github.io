@@ -1,27 +1,66 @@
 /* styles.css */
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     margin: 0;
     padding: 0;
+    background-image: url('images/fixed_background2.jpg'); /* Cambia 'tu_imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
     background-color: black;
     color: white;
+    overflow-x: hidden;
+    background-image: url('images/fixed_background2.jpg'); /* Cambia 'tu_imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row; /* Establecer dirección de la columna para apilar elementos verticalmente */
+    min-height: 100vh;
+}
+
+.topbar {
+    width: 800px; /* Ajusta el ancho de la topbar según tus necesidades */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.topbar-text {
+    background-color: rgb(85, 148, 128, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .container {
     max-width: 960px;
-    margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    background-color: goldenrod;
+    background-color: rgb(220, 136, 11, 0.8);
     padding: 20px;
     text-align: center;
+    border-radius: 2px;
+    width: 800px; /* Ajusta el ancho de la topbar según tus necesidades */    overflow-y: auto; /* Agregado para permitir el scroll dentro del encabezado */
+    flex-direction: column;
+    justify-content: left;
 }
 
 .header h1 {
     margin: 0;
+}
+
+.header i {
+    font-size: 2.5em;
 }
 
 .main-content {
@@ -31,13 +70,58 @@ body {
 .knowledge-section,
 .personal-section,
 .ambitions-section {
-    margin-bottom: 40px;
+    background-color: #8B4513; /* Marrón oscuro */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: 850px; /* Añadir margen a la izquierda para evitar la superposición con la top bar */
+    margin-right: 50px; /* Añadir margen a la izquierda para evitar la superposición con la top bar */
+    margin-bottom: 10px; /* Espacio entre secciones */
+    max-width: 800px;
+    width: 100%;
+    flex: 1;
+}
+
+.knowledge-section i,
+.personal-section i,
+.ambitions-section i {
+    font-size: 3.5em; /* Tamaño más grande para los íconos en las secciones */
+}
+
+.knowledge-section ul,
+.personal-section ul,
+.ambitions-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.knowledge-section li,
+.personal-section li,
+.ambitions-section li {
+    display: flex; /* Mostrar elementos en línea para centrar el ícono verticalmente */
+    align-items: center;
+    margin-bottom: 10px; /* Aumentar el espacio entre elementos listados */
+}
+
+.knowledge-section li i,
+.personal-section li i,
+.ambitions-section li i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
 }
 
 .bottom-bar {
-    background-color: goldenrod;
+    background-color: rgb(184, 137, 18);
     padding: 10px 0;
     text-align: center;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.bottom-bar i {
+    font-size: 1.5em; /* Tamaño más grande para los íconos en la barra inferior */
 }
 
 .social-links {
