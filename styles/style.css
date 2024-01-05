@@ -4,13 +4,12 @@ body {
     font-family: 'JetBrains Mono', monospace;
     margin: 0;
     padding: 0;
-    background-image: url('images/fixed_background2.jpg'); /* Cambia 'tu_imagen.jpg' por la ruta de tu imagen */
+    background-image: url('images/background3.jpg'); /* Cambia 'tu_imagen.jpg' por la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     background-color: black;
     color: white;
     overflow-x: hidden;
-    background-image: url('images/fixed_background2.jpg'); /* Cambia 'tu_imagen.jpg' por la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,10 +29,18 @@ body {
 }
 
 .topbar-text {
-    background-color: rgb(85, 148, 128, 0.8);
+    color: #ccc5b9cf;
     padding: 20px;
     text-align: center;
     border-radius: 5px; /* Bordes redondeados */
+}
+
+.topbar-text img {
+    max-width: 100%; 
+    margin-bottom: 10px; 
+    height: auto;
+    width: 200px;
+    border-radius: 5px;
 }
 
 .container {
@@ -46,11 +53,11 @@ body {
 }
 
 .header {
-    background-color: rgb(220, 136, 11, 0.8);
+    background-color: #293241FA;
     padding: 20px;
     text-align: center;
-    border-radius: 2px;
-    width: 800px; /* Ajusta el ancho de la topbar según tus necesidades */    overflow-y: auto; /* Agregado para permitir el scroll dentro del encabezado */
+    border-radius: 5px;
+    width: 710px; /* Ajusta el ancho de la topbar según tus necesidades */    overflow-y: auto; /* Agregado para permitir el scroll dentro del encabezado */
     flex-direction: column;
     justify-content: left;
 }
@@ -70,15 +77,24 @@ body {
 .knowledge-section,
 .personal-section,
 .ambitions-section {
-    background-color: #8B4513; /* Marrón oscuro */
+    background-color: #2f3e46fa;
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
-    margin-left: 850px; /* Añadir margen a la izquierda para evitar la superposición con la top bar */
-    margin-right: 50px; /* Añadir margen a la izquierda para evitar la superposición con la top bar */
+    margin-left: 900px; /* Añadir margen a la izquierda para evitar la superposición con la top bar */
     margin-bottom: 10px; /* Espacio entre secciones */
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     flex: 1;
+    text-align: center;
+}
+
+.knowledge-section ol,
+.personal-section ol,
+.ambitions-section ol {
+    column-count: 2;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .knowledge-section i,
@@ -98,9 +114,13 @@ body {
 .knowledge-section li,
 .personal-section li,
 .ambitions-section li {
+    font-size: 23px;
     display: flex; /* Mostrar elementos en línea para centrar el ícono verticalmente */
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px; /* Aumentar el espacio entre elementos listados */
+    background-color: #eb5e28;
+    border-radius: 3px;
 }
 
 .knowledge-section li i,
@@ -110,10 +130,10 @@ body {
 }
 
 .bottom-bar {
-    background-color: rgb(184, 137, 18);
+    background-color: #293241;
     padding: 10px 0;
     text-align: center;
-    width: 200px;
+    width: 225px;
     position: fixed;
     right: 0;
     height: 100vh;
@@ -147,6 +167,10 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 35px;
 }
 
 a:hover {
