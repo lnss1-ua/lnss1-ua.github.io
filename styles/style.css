@@ -201,10 +201,10 @@ a:hover {
     }
 
     .topbar {
-        max-width: 45rem;
+        max-width: 60rem;
         display: flex;
-        padding-right: 15rem;
-        padding-left: 15rem;
+        padding-right: 10rem;
+        padding-left: 10rem;
         height: auto;
         justify-content: center;
         align-items: center;
@@ -253,18 +253,44 @@ a:hover {
     }
 }
 
-/* Estilos para pantallas reducidas (max-width: 1750px) */
+/* Estilos para pantallas reducidas (max-width: 800px) */
 @media only screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .topbar {
-        max-width: 45rem;
+        max-width: 60rem;
         display: flex;
         padding-right: 5rem;
         padding-left: 5rem;
-        margin-left: auto;
         height: auto;
         justify-content: center;
         align-items: center;
         position: relative;
+    }
+
+    .topbar-text img {
+        max-width: 10rem;
+        height: auto;
+        border-radius: 0.3125rem;
+    }
+
+    .container {
+        max-width: 30rem;
+        padding-right: 3.5rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .knowledge-section,
+    .personal-section,
+    .aboutme-section,
+    .ambitions-section {
+        margin-left: auto;
     }
 }
 
