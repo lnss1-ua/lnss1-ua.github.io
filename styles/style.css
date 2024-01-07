@@ -4,22 +4,20 @@ body {
     font-family: 'JetBrains Mono', monospace;
     margin: 0;
     padding: 0;
-    background-image: url('images/background3.jpg'); /* Cambia 'tu_imagen.jpg' por la ruta de tu imagen */
+    background-image: url('images/background3.jpg');
     background-size: cover;
     background-position: center;
     background-color: black;
     color: white;
     overflow-x: hidden;
-    background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     display: flex;
-    flex-direction: row; /* Establecer dirección de la columna para apilar elementos verticalmente */
+    flex-direction: row;
     min-height: 100vh;
 }
 
 .topbar {
-    width: 800px; /* Ajusta el ancho de la topbar según tus necesidades */
+    max-width: 50rem; /* Cambiado de px a rem */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,22 +28,21 @@ body {
 
 .topbar-text {
     color: #ccc5b9cf;
-    padding: 20px;
+    padding: 1.25rem; /* Cambiado de px a rem */
     text-align: center;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 0.3125rem; /* Cambiado de px a rem */
 }
 
 .topbar-text img {
-    max-width: 100%; 
-    margin-bottom: 10px; 
+    max-width: 12.5rem;
+    margin-bottom: 1rem; /* Cambiado de px a rem */
     height: auto;
-    width: 200px;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .container {
-    max-width: 960px;
-    padding: 20px;
+    max-width: 60rem;
+    padding: 1.25rem;
     text-align: center;
     flex: 1;
     display: flex;
@@ -54,10 +51,11 @@ body {
 
 .header {
     background-color: #252422FA;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
-    border-radius: 5px;
-    width: 710px; /* Ajusta el ancho de la topbar según tus necesidades */    overflow-y: auto; /* Agregado para permitir el scroll dentro del encabezado */
+    border-radius: 0.3125rem;
+    max-width: 44.375rem; /* Cambiado de px a rem */
+    overflow-y: auto;
     flex-direction: column;
     justify-content: left;
 }
@@ -67,11 +65,11 @@ body {
 }
 
 .header i {
-    font-size: 2.5em;
+    font-size: 2.5rem; /* Cambiado de px a rem */
 }
 
 .main-content {
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .knowledge-section,
@@ -79,11 +77,11 @@ body {
 .aboutme-section,
 .ambitions-section {
     background-color: #403d39fa;
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    margin-left: 900px; /* Añadir margen a la izquierda para evitar la superposición con la top bar */
-    margin-bottom: 10px; /* Espacio entre secciones */
-    max-width: 600px;
+    padding: 1.25rem;
+    border-radius: 0.625rem; /* Cambiado de px a rem */
+    margin-left: 56.25em; /* Cambiado de px a rem */
+    margin-bottom: 1.25rem; /* Cambiado de px a rem */
+    max-width: 37.5rem; /* Cambiado de px a rem */
     width: 100%;
     flex: 1;
     text-align: center;
@@ -102,7 +100,7 @@ body {
 .personal-section i,
 .aboutme-section i,
 .ambitions-section i {
-    font-size: 3.5em; /* Tamaño más grande para los íconos en las secciones */
+    font-size: 3.5rem; /* Cambiado de px a rem */
 }
 
 .knowledge-section ul,
@@ -116,26 +114,26 @@ body {
 .knowledge-section li,
 .personal-section li,
 .ambitions-section li {
-    font-size: 23px;
-    display: flex; /* Mostrar elementos en línea para centrar el ícono verticalmente */
+    font-size: 1.4375rem; /* Cambiado de px a rem */
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px; /* Aumentar el espacio entre elementos listados */
+    margin-bottom: 1.25rem; /* Cambiado de px a rem */
     background-color: #eb5e28;
-    border-radius: 3px;
+    border-radius: 0.1875rem; /* Cambiado de px a rem */
 }
 
 .knowledge-section li i,
 .personal-section li i,
 .ambitions-section li i {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    margin-right: 0.625rem; /* Cambiado de px a rem */
 }
 
 .bottom-bar {
     background-color: #252422;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
-    width: 225px;
+    max-width: 14.0625rem; /* Cambiado de px a rem */
     position: fixed;
     right: 0;
     height: 100vh;
@@ -143,7 +141,7 @@ body {
 }
 
 .bottom-bar i {
-    font-size: 1.5em; /* Tamaño más grande para los íconos en la barra inferior */
+    font-size: 1.5rem;
 }
 
 .social-links {
@@ -154,16 +152,32 @@ body {
 
 .social-links li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.625rem; /* Cambiado de px a rem */
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
+    max-width: 1.875rem; /* Cambiado de px a rem */
+    max-height: 1.875rem; /* Cambiado de px a rem */
 }
 
 .footer p {
     margin: 0;
+}
+
+.descargar-btn {
+    display: inline-block;
+    padding: 1.25rem 2.5rem; /* Cambiado de px a rem */
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.descargar-btn:hover {
+    background-color: #45a049;
 }
 
 a {
@@ -172,9 +186,85 @@ a {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 2.1875rem; /* Cambiado de px a rem */
 }
 
 a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 0.125rem solid white; /* Cambiado de px a rem */
 }
+
+/* Estilos para pantallas reducidas (max-width: 1750px) */
+@media only screen and (max-width: 1750px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topbar {
+        max-width: 45rem;
+        display: flex;
+        padding-right: 15rem;
+        padding-left: 15rem;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .topbar-text img {
+        max-width: 10rem;
+        margin-bottom: 1rem; /* Cambiado de px a rem */
+        height: auto;
+        border-radius: 0.3125rem;
+    }
+
+    .container {
+        margin-top: 2rem;
+        max-width: 45rem;
+        padding: 1.25rem;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .knowledge-section,
+    .personal-section,
+    .aboutme-section,
+    .ambitions-section {
+        margin-left: auto;
+    }
+
+    .bottom-bar {
+        background-color: #252422;
+        padding: 0.625rem 0;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+        bottom: 0;
+        height: auto;
+        border-radius: 4000px;
+    }
+
+    .bottom-bar i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para pantallas reducidas (max-width: 1750px) */
+@media only screen and (max-width: 800px) {
+    .topbar {
+        max-width: 45rem;
+        display: flex;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        margin-left: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
