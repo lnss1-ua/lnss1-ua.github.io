@@ -263,8 +263,8 @@ a:hover {
     .topbar {
         max-width: 60rem;
         display: flex;
-        padding-right: 5rem;
-        padding-left: 5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
         height: auto;
         justify-content: center;
         align-items: center;
