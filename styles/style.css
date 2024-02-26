@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 14.5rem;
     position: fixed;
 }
 
