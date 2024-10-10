@@ -154,6 +154,7 @@ body {
 
 .language-selector {
     position: fixed;
+    display: flex;
     top: 10px;
     right: 10px;
     z-index: 100;
@@ -320,7 +321,6 @@ a:hover {
     }
 
     .language-selector {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
