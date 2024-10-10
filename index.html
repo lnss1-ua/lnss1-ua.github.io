@@ -12,99 +12,183 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="topbar">
-        <header class="header animated fadeIn">
-            <div class="topbar-text">
-                <h1>Bienvenido</h1> 
-                <img src="/styles/images/foto_nico.jpeg" alt="FotoCV">
-                <h1>Soy Nicolás Sánchez</h1> 
-                <h1>Ingeniero</h1>
-            </div>
-            <a href="/docs/CV_Luis_Nicolas_Sanchez_Sanchez.pdf" download="CV_Luis_Nicolas_Sanchez_Sanchez.pdf">
-                <button class="descargar-btn">Curriculum Vitae</button>
-            </a>
-        </header>
-    </div>
-    
-
-    <!-- Main Content -->
-    <div class="container main-content">
-
-        <!-- Sección de Conocimientos -->
-        <section class="knowledge-section animated fadeInUp">
-            <h2><i class="fas fa-code"></i> Conocimientos</h2>
-            <ol>
-                <li>Python</li>                
-                <li>C++</li>
-                <li>Javascript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Swift</li>
-                <li>Scheme</li>
-                <li>ADA</li>
-                <!-- Agrega más según tus conocimientos -->
-            </ol>
-        </section>
-
-        <!-- Sección Personal -->
-        <section class="personal-section animated fadeInUp">
-            <h2><i class="fas fa-bolt"></i> Frameworks</h2>
-            <ol>
-                <li>Laravel</li>                
-                <li>ASP.NET</li>
-                <li>API Rest</li>
-                <li>Node.js</li>
-                <!-- Agrega más según tus conocimientos -->
-            </ol>
-        </section>
-
-        <section class="personal-section animated fadeInUp">
-            <h2><i class="fas fa-feather"></i> Soft-Skills</h2>
-            <ol>
-                <li>Trabajo en equipo</li>                
-                <li>Liderazgo</li>
-                <li>Interés</li>
-                <li>Curisidad</li>
-                <!-- Agrega más según tus conocimientos -->
-            </ol>
-        </section>
-
-        <section class="personal-section animated fadeInUp">
-            <h2><i class="fas fa-globe"></i> Idiomas</h2>
-            <ol>
-                <li>Inglés</li>                
-                <li>Castellano</li>
-                <li>Catalán</li>
-                <!-- Agrega más según tus conocimientos -->
-            </ol>
-        </section>
-
-        <!-- Sección de Ambiciones -->
-        <section class="aboutme-section animated fadeInUp">
-            <h2><i class="fas fa-user"></i> Sobre mi</h2>
-            <p> Nacido en la isla de Ibiza, España, soy un estudiante en último curso de 
-                Ingeniería Informática en la Universidad de Alicante. Soy una persona abierta a nuevas ideas y con humor. Me interesa
-                la tecnología, el deporte y la comida entre otras cosas. 
-            </p>
-        </section>
+    <!-- Selector de idioma -->
+    <div>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">English</button>
     </div>
 
-    <!-- Bottom Bar -->
-    <footer class="bottom-bar animated fadeIn">
-        <div class="container">
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/perfildeluisnicolassanchezsanchez-es/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/lnss1-ua" target="_blank"><i class="fab fa-github"></i></a></li>
-                <!-- Agrega más según tus redes sociales -->
-            </ul>
-            <p>Contacto: <a href="mailto:lnss1@gcloud.ua.es">lnss1@gcloud.ua.es</a></p>
-            <p>Teléfono: 640259948</p>
+    <!-- Header Español -->
+    <div id="content-es">
+        <div class="topbar">
+            <header class="header animated fadeIn">
+                <div class="topbar-text">
+                    <h1>Bienvenido</h1> 
+                    <img src="/styles/images/foto_nico.jpeg" alt="FotoCV">
+                    <h1>Soy Nicolás Sánchez</h1> 
+                    <h1>Ingeniero</h1>
+                </div>
+                <a href="/docs/CV_Luis_Nicolas_Sanchez_Sanchez.pdf" download="CV_Luis_Nicolas_Sanchez_Sanchez.pdf">
+                    <button class="descargar-btn">Curriculum Vitae</button>
+                </a>
+            </header>
         </div>
-    </footer>
 
-    <script src="main.js"></script>
-</body>
-</html>
+        <!-- Main Content -->
+        <div class="container main-content">
 
+            <!-- Sección de Conocimientos -->
+            <section class="knowledge-section animated fadeInUp">
+                <h2><i class="fas fa-code"></i> Conocimientos</h2>
+                <ol>
+                    <li>Python</li>                
+                    <li>C++</li>
+                    <li>ROS2</li>
+                    <li>Matlab</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Swift</li>
+                    <li>Scheme</li>
+                    <li>ADA</li>
+                </ol>
+            </section>
 
+            <!-- Sección Personal -->
+            <section class="personal-section animated fadeInUp">
+                <h2><i class="fas fa-bolt"></i> Frameworks</h2>
+                <ol>
+                    <li>Laravel</li>                
+                    <li>ASP.NET</li>
+                    <li>API Rest</li>
+                    <li>Node.js</li>
+                </ol>
+            </section>
+
+            <section class="personal-section animated fadeInUp">
+                <h2><i class="fas fa-feather"></i> Soft-Skills</h2>
+                <ol>
+                    <li>Trabajo en equipo</li>                
+                    <li>Liderazgo</li>
+                    <li>Interés</li>
+                    <li>Curiosidad</li>
+                </ol>
+            </section>
+
+            <section class="personal-section animated fadeInUp">
+                <h2><i class="fas fa-globe"></i> Idiomas</h2>
+                <ol>
+                    <li>Inglés</li>                
+                    <li>Castellano</li>
+                    <li>Catalán</li>
+                </ol>
+            </section>
+
+            <!-- Sección de Ambiciones -->
+            <section class="aboutme-section animated fadeInUp">
+                <h2><i class="fas fa-user"></i> Sobre mi</h2>
+                <p> Nacido en la isla de Ibiza, España, apasionado de la tecnología y más en concreto de la robótica. 
+                    Además de la tecnología también me gusta el deporte, la lectura y la cocina. Para mi trabajar en este sector es un sueño por el que estoy dispuesto a luchar.
+                </p>
+            </section>
+        </div>
+
+        <!-- Bottom Bar -->
+        <footer class="bottom-bar animated fadeIn">
+            <div class="container">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/perfildeluisnicolassanchezsanchez-es/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/lnss1-ua" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <p>Contacto: <a href="mailto:lnss1@gcloud.ua.es">lnss1@gcloud.ua.es</a></p>
+                <p>Teléfono: 640259948</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Header Inglés -->
+    <div id="content-en" style="display:none;">
+        <div class="topbar">
+            <header class="header animated fadeIn">
+                <div class="topbar-text">
+                    <h1>Welcome</h1> 
+                    <img src="/styles/images/foto_nico.jpeg" alt="Profile Photo">
+                    <h1>I am Nicolás Sánchez</h1> 
+                    <h1>Engineer</h1>
+                </div>
+                <a href="/docs/CV_Luis_Nicolas_Sanchez_Sanchez.pdf" download="CV_Luis_Nicolas_Sanchez_Sanchez.pdf">
+                    <button class="descargar-btn">Curriculum Vitae</button>
+                </a>
+            </header>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container main-content">
+
+            <!-- Knowledge Section -->
+            <section class="knowledge-section animated fadeInUp">
+                <h2><i class="fas fa-code"></i> Knowledge</h2>
+                <ol>
+                    <li>Python</li>                
+                    <li>C++</li>
+                    <li>ROS2</li>
+                    <li>Matlab</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Swift</li>
+                    <li>Scheme</li>
+                    <li>ADA</li>
+                </ol>
+            </section>
+
+            <!-- Personal Section -->
+            <section class="personal-section animated fadeInUp">
+                <h2><i class="fas fa-bolt"></i> Frameworks</h2>
+                <ol>
+                    <li>Laravel</li>                
+                    <li>ASP.NET</li>
+                    <li>API Rest</li>
+                    <li>Node.js</li>
+                </ol>
+            </section>
+
+            <section class="personal-section animated fadeInUp">
+                <h2><i class="fas fa-feather"></i> Soft-Skills</h2>
+                <ol>
+                    <li>Teamwork</li>                
+                    <li>Leadership</li>
+                    <li>Interest</li>
+                    <li>Curiosity</li>
+                </ol>
+            </section>
+
+            <section class="personal-section animated fadeInUp">
+                <h2><i class="fas fa-globe"></i> Languages</h2>
+                <ol>
+                    <li>English</li>                
+                    <li>Spanish</li>
+                    <li>Catalan</li>
+                </ol>
+            </section>
+
+            <!-- About Me Section -->
+            <section class="aboutme-section animated fadeInUp">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+                <p> Born on the island of Ibiza,
+                </p>
+            </section>
+        </div>
+
+        <!-- Bottom Bar -->
+        <footer class="bottom-bar animated fadeIn">
+            <div class="container">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/perfildeluisnicolassanchezsanchez-es/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/lnss1-ua" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <p>Contact: <a href="mailto:lnss1@gcloud.ua.es">lnss1@gcloud.ua.es</a></p>
+                <p>Phone number: 640259948</p>
+            </div>
+        </footer>
+    </div>
