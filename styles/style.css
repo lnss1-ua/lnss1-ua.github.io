@@ -226,12 +226,17 @@ a:hover {
         align-items: center;
     }
 
+    .language-selector {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
     .topbar {
         max-width: 60rem;
         display: flex;
         padding-right: 10rem;
         padding-left: 10rem;
-        padding-top: 10rem;
         height: auto;
         justify-content: center;
         align-items: center;
@@ -279,18 +284,20 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    .language-selector {
-        position: absolute;
-        display: flex;
-        top: 10px;
-        left: 50%;
-        z-index: 100;
-    }
+
 }
 
 /* Estilos para pantallas reducidas (max-width: 800px) */
 @media only screen and (max-width: 800px) {
     body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-selector {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
         flex-direction: column;
         align-items: center;
     }
@@ -326,11 +333,6 @@ a:hover {
     .aboutme-section,
     .ambitions-section {
         margin-left: auto;
-    }
-
-    .language-selector {
-        flex-direction: column;
-        align-items: center;
     }
 }
 
