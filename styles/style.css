@@ -16,6 +16,31 @@ body {
     min-height: 100vh;
 }
 
+.language-selector {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+.language-selector button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+}
+.language-selector button:hover {
+    background-color: #9b4f11;
+}
+.language-selector button.active {
+    background-color: #eb5e28; /* Verde para botón activo */
+}
+
 .topbar {
     max-width: 50rem; /* Cambiado de px a rem */
     height: 100vh;
@@ -151,31 +176,6 @@ body {
     margin: 0;
 }
 
-.language-selector {
-    position: absolute;
-    display: flex;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-}
-.language-selector button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: bold;
-}
-.language-selector button:hover {
-    background-color: #9b4f11;
-}
-.language-selector button.active {
-    background-color: #eb5e28; /* Verde para botón activo */
-}
-
 .social-links li {
     display: inline-block;
     margin-right: 0.625rem; /* Cambiado de px a rem */
@@ -228,8 +228,11 @@ a:hover {
 
     .language-selector {
         display: flex;
-        justify-content: flex-end;
-        margin-bottom: 10px;
+        justify-content: center; /* Centrar los botones */
+        position: absolute;      /* Posicionarlos de manera absoluta */
+        top: 10px;               /* Separarlos de la parte superior */
+        left: 50%;
+        transform: translateX(-50%); /* Asegurar que queden centrados */
     }
 
     .topbar {
@@ -237,6 +240,7 @@ a:hover {
         display: flex;
         padding-right: 10rem;
         padding-left: 10rem;
+        padding-top: 5rem;
         height: auto;
         justify-content: center;
         align-items: center;
@@ -296,10 +300,11 @@ a:hover {
 
     .language-selector {
         display: flex;
-        justify-content: flex-end;
-        margin-bottom: 10px;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center; /* Centrar los botones */
+        position: absolute;      /* Posicionarlos de manera absoluta */
+        top: 10px;               /* Separarlos de la parte superior */
+        left: 50%;
+        transform: translateX(-50%); /* Asegurar que queden centrados */
     }
 
     .topbar {
@@ -307,6 +312,7 @@ a:hover {
         display: flex;
         padding-right: 2rem;
         padding-left: 2rem;
+        padding-top: 5rem;
         height: auto;
         justify-content: center;
         align-items: center;
