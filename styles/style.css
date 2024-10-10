@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 14.5rem;
+    padding-top: 5rem;
     position: fixed;
 }
 
@@ -166,6 +167,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
 }
 .language-selector button:hover {
     background-color: #9b4f11;
