@@ -13,9 +13,9 @@
 <body>
 
     <!-- Selector de idioma -->
-    <div>
-        <button onclick="changeLanguage('es')">Español</button>
-        <button onclick="changeLanguage('en')">English</button>
+    <div class="language-selector">
+        <button id="btn-es" class="active" onclick="changeLanguage('es')">Español</button>
+        <button id="btn-en" onclick="changeLanguage('en')">English</button>
     </div>
 
     <!-- Header Español -->
@@ -29,7 +29,7 @@
                     <h1>Ingeniero</h1>
                 </div>
                 <a href="/docs/CV_Luis_Nicolas_Sanchez_Sanchez.pdf" download="CV_Luis_Nicolas_Sanchez_Sanchez.pdf">
-                    <button class="descargar-btn">Curriculum Vitae</button>
+                    <button class="descargar-btn">Descargar CV</button>
                 </a>
             </header>
         </div>
@@ -117,7 +117,7 @@
                     <h1>Engineer</h1>
                 </div>
                 <a href="/docs/CV_Luis_Nicolas_Sanchez_Sanchez.pdf" download="CV_Luis_Nicolas_Sanchez_Sanchez.pdf">
-                    <button class="descargar-btn">Curriculum Vitae</button>
+                    <button class="descargar-btn">Download CV</button>
                 </a>
             </header>
         </div>
@@ -191,4 +191,20 @@
                 <p>Phone number: 640259948</p>
             </div>
         </footer>
+        
     </div>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'es') {
+                document.getElementById('content-es').style.display = 'block';
+                document.getElementById('content-en').style.display = 'none';
+                document.getElementById('btn-es').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else if (lang === 'en') {
+                document.getElementById('content-es').style.display = 'none';
+                document.getElementById('content-en').style.display = 'block';
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-es').classList.remove('active');
+            }
+        }
+    </script>

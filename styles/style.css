@@ -151,6 +151,29 @@ body {
     margin: 0;
 }
 
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+.language-selector button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+.language-selector button:hover {
+    background-color: #555;
+}
+.language-selector button.active {
+    background-color: #4CAF50; /* Verde para botón activo */
+}
+
 .social-links li {
     display: inline-block;
     margin-right: 0.625rem; /* Cambiado de px a rem */
