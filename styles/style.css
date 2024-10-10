@@ -163,12 +163,12 @@ body {
     border: none;
     padding: 10px 15px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sans Seriff', monospace;
 }
 .language-selector button:hover {
-    background-color: #555;
+    background-color: #111f9b;
 }
 .language-selector button.active {
     background-color: #4CAF50; /* Verde para botón activo */
