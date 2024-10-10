@@ -152,7 +152,7 @@ body {
 }
 
 .language-selector {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     z-index: 100;
@@ -165,13 +165,13 @@ body {
     margin: 5px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: 'Sans Seriff', monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 .language-selector button:hover {
-    background-color: #111f9b;
+    background-color: #9b4f11;
 }
 .language-selector button.active {
-    background-color: #4CAF50; /* Verde para botón activo */
+    background-color: #eb5e28; /* Verde para botón activo */
 }
 
 .social-links li {
